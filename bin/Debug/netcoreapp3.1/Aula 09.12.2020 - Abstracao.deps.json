@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aula 09.12.2020 - Abstracao/1.0.0": {
+        "runtime": {
+          "Aula 09.12.2020 - Abstracao.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aula 09.12.2020 - Abstracao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

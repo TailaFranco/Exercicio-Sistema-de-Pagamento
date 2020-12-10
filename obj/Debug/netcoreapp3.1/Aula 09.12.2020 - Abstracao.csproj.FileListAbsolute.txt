@@ -1,0 +1,13 @@
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\bin\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.exe
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\bin\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.deps.json
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\bin\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.runtimeconfig.json
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\bin\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.runtimeconfig.dev.json
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\bin\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.dll
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\bin\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.pdb
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.csprojAssemblyReference.cache
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.AssemblyInfoInputs.cache
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.AssemblyInfo.cs
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.csproj.CoreCompileInputs.cache
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.dll
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.pdb
+C:\Users\Taila\Desktop\Dev\Aula 09.12.2020 - Abstracao\obj\Debug\netcoreapp3.1\Aula 09.12.2020 - Abstracao.genruntimeconfig.cache
