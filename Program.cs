@@ -8,7 +8,7 @@ namespace Aula_09._12._2020___Abstracao
         {   int cartao = 0;
             Console.Clear();
                Console.WriteLine("Data:"+DateTime.Now.ToShortDateString());
-        
+            
             Boleto boleto = new Boleto();
             Credito credito = new Credito();
             Debito debito = new Debito();
@@ -30,22 +30,22 @@ namespace Aula_09._12._2020___Abstracao
                    Console.WriteLine("Digite o código de barras do boleto");
                    boleto.CodigoDeBarras = Console.ReadLine();
                    Console.WriteLine("Digite o valor do boleto");
-                   float valor1 = float.Parse(Console.ReadLine());
+                   boleto.Valor = float.Parse(Console.ReadLine());
                    Console.WriteLine("Digite o Dia de Vencimento");
                    boleto.DataDeVencimento = int.Parse(Console.ReadLine()); 
                    Console.WriteLine("Digite o dia de Pagamento");
                    boleto.DataDePagamento = int.Parse(Console.ReadLine());
-                   if(boleto.Desconto(valor1))
+                   if(boleto.Desconto(boleto.Valor))
                    {
-                       valor1 = valor1*0.88f;
+                       boleto.Valor = boleto.Valor*0.88f;
                        Console.WriteLine("Pagando antes da data desconto de 12%");
-                       Console.WriteLine($"Boleto pago no valor de {valor1}");
+                       Console.WriteLine($"Boleto pago no valor de {boleto.Valor}");
 
                    }
                    else{
-                       valor1 = valor1*1.01f;
+                       boleto.Valor = boleto.Valor*1.01f;
                        Console.WriteLine("Pagando após a data juros de 1%");
-                       Console.WriteLine($"Boleto pago no valor de {valor1}");
+                       Console.WriteLine($"Boleto pago no valor de {boleto.Valor}");
                    }
                     break;
                     case 2:
@@ -99,11 +99,11 @@ namespace Aula_09._12._2020___Abstracao
                                 if (resposta2 == "sim")
                                 {
                                     Console.WriteLine("Digite o valor da compra");
-                                    float valor = float.Parse(Console.ReadLine());
+                                    debito.Valor = float.Parse(Console.ReadLine());
                                     
-                                    if (debito.Pagar(valor))
+                                    if (debito.Pagar(debito.Valor))
                                     {
-                                    debito.Saldo = debito.Saldo - valor;
+                                    debito.Saldo = debito.Saldo - debito.Valor;
                                     Console.WriteLine("Pagamento realizado com sucesso");
                                     Console.WriteLine($"O seu saldo disponível restante é de {debito.Saldo}");
                                     }
@@ -124,40 +124,40 @@ namespace Aula_09._12._2020___Abstracao
                                 if (resposta3 == "sim")
                                 {
                                     Console.WriteLine("Digite o valor da compra");
-                                    float valor = float.Parse(Console.ReadLine());
+                                    credito.Valor = float.Parse(Console.ReadLine());
                                     
-                                    if (credito.Pagar(valor))
+                                    if (credito.Pagar(credito.Valor))
                                     {
                                     Console.WriteLine("Deseja parcelar? Responda apenas com sim ou não");
                                     string resposta4 = Console.ReadLine();
                                     if(resposta4 == "sim")
-                                    {
+                                    {   Console.WriteLine("Até 6 parcelas juros de 5%, de 6 a 12 parcelas o juros é de 8%");
                                         Console.WriteLine("Em quantas parcelas? Min: 2 Max: 12");
                                         credito.parcelar = int.Parse(Console.ReadLine());
-                                        credito.Parcelamento(valor, credito.parcelar);
-                                        if(credito.Parcelamento(valor, credito.parcelar))
+                                        credito.Parcelamento(credito.Valor, credito.parcelar);
+                                        if(credito.Parcelamento(credito.Valor, credito.parcelar))
                                         {
                                             if(credito.parcelar >1 && credito.parcelar <=6)
                                             {
-                                                valor = valor *1.05f;
+                                                credito.Valor = credito.Valor *1.05f;
                                             }
                                             else if (credito.parcelar >6 && credito.parcelar <=12)
                                             {
-                                                 valor = valor * 1.08f;
+                                                 credito.Valor= credito.Valor * 1.08f;
                                             }
                                                 else
                                                 {
                                                      Console.WriteLine("Valor selecionado para parcelamento, INDISPONÍVEL");
                                                 }
                                         }
-                                        credito.Limite = credito.Limite - valor;
-                                    Console.WriteLine($"Compra no valor total com juros de {valor}, dividido em {credito.parcelar} parcelas, de {valor/credito.parcelar}");
+                                        credito.Limite = credito.Limite - credito.Valor;
+                                    Console.WriteLine($"Compra no valor total com juros de {credito.Valor}, dividido em {credito.parcelar} parcelas, de {credito.Valor/credito.parcelar}");
                                     Console.WriteLine("Pagamento realizado com sucesso");
                                     Console.WriteLine($"O seu limite disponível restante é de {credito.Limite}");
                                     }
                                     else{
                                     Console.WriteLine("Pagamento no crédito a vista");
-                                    credito.Limite = credito.Limite - valor;
+                                    credito.Limite = credito.Limite - credito.Valor;
                                     Console.WriteLine("Pagamento realizado com sucesso");
                                     Console.WriteLine($"O seu saldo disponível restante é de {credito.Limite}");}
                                     }

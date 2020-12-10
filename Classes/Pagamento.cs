@@ -10,6 +10,14 @@ namespace Aula_09._12._2020___Abstracao.Classes
             get{return data;}
         }
 
+        protected float valor;
+        public float Valor
+        {
+            get {return valor;}
+            set {valor = value;}
+
+        }
+
         // Métodos
 
         public string Cancelar(int opcao)
